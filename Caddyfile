@@ -1,0 +1,3 @@
+caldotcom.duckdns.org {
+    reverse_proxy calcom:3000
+}

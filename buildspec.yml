@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+  build:
+    commands:
+      - echo "Packaging application for deployment"
+      - ls -lR   # Debug: list all files
+
+artifacts:
+  files:
+    - appspec.yml
+    - scripts/**/*
+    - docker-compose.yaml
+    - Dockerfile
+    - .env
+    - Caddyfile
+    - calcom/**/*
