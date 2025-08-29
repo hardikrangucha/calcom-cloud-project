@@ -12,5 +12,5 @@ hooks:
   #     runas: root
   AfterInstall:
     - location: scripts/deploy.sh
-      timeout: 300
+      timeout: 1800 #time increased to 30mins
       runas: root
